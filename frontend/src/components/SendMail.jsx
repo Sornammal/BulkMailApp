@@ -28,7 +28,7 @@ export default function SendMail() {
 
     setLoading(true);
     try {
-      const res = await axios.post('http://localhost:5000/api/mail/send', {
+      const res = await axios.post('https://bulkmailapp-2swv.onrender.com/api/mail/send', {
         subject,
         body,
         recipients: emailList,
